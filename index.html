@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image and Audio Toggle App</title>
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Charlie Fat Fingers">
+    <meta property="og:description" content="Check out this interactive app with audio and image rotation!">
+    <meta property="og:image" content="https://yourusername.github.io/audio-toggle-app/Fat%20Fingers%20Image.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/audio-toggle-app/">
+    <meta property="og:type" content="website">
     <style>
         body {
             display: flex;
@@ -87,7 +93,7 @@
         secondaryAudio.volume = 1.0;
 
         const rotateImage = () => {
-            rotation += 3; // Adjust the increment to control the speed of rotation
+            rotation += 4.5; // Adjust the increment to control the speed of rotation
             record.style.transform = `rotate(${rotation}deg)`;
             animationFrameId = requestAnimationFrame(rotateImage);
         };
