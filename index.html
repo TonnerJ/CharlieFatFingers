@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image and Audio Toggle App</title>
-    <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Charlie Fat Fingers">
-    <meta property="og:description" content="Check out this interactive app with audio and image rotation!">
-    <meta property="og:image" content="https://yourusername.github.io/audio-toggle-app/Fat%20Fingers%20Image.jpg">
-    <meta property="og:url" content="https://yourusername.github.io/audio-toggle-app/">
+    <title>Charlie Fat Fingers</title>
+    <meta name="description" content="Oh, god I hate this!">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://tonnerj.github.io/CharlieFatFingers/">
     <meta property="og:type" content="website">
+    <meta property="og:title" content="Charlie Fat Fingers">
+    <meta property="og:description" content="Oh, god I hate this!">
+    <meta property="og:image" content="https://tonnerj.github.io/CharlieFatFingers/Fat%20Fingers%20Image.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="tonnerj.github.io">
+    <meta property="twitter:url" content="https://tonnerj.github.io/CharlieFatFingers/">
+    <meta name="twitter:title" content="Charlie Fat Fingers">
+    <meta name="twitter:description" content="Oh, god I hate this!">
+    <meta name="twitter:image" content="https://tonnerj.github.io/CharlieFatFingers/Fat%20Fingers%20Image.jpg">
+
     <style>
         body {
             display: flex;
@@ -18,7 +29,7 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-color: #000; /* Set a background color for better contrast */
+            background-color: #000;
         }
 
         .container {
@@ -93,7 +104,7 @@
         secondaryAudio.volume = 1.0;
 
         const rotateImage = () => {
-            rotation += 4.5; // Adjust the increment to control the speed of rotation
+            rotation += 2; // Adjust the increment to control the speed of rotation
             record.style.transform = `rotate(${rotation}deg)`;
             animationFrameId = requestAnimationFrame(rotateImage);
         };
